@@ -1,3 +1,6 @@
+@charset "UTF-8";
 body {
-    font-family: 'Cairo', sans-serif;
+  direction: rtl;
+  font-family: "Cairo Regular", sans-serif;
+  text-align: right;
 }

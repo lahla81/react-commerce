@@ -1,0 +1,40 @@
+.collection-item {
+  align-items: center;
+  margin-top: 4px;
+  padding: 4px;
+}
+.overlay{
+  display: flex;
+  justify-content: space-around;
+  background: rgba(255, 255, 255, 0.3);
+  height: 100%;
+  border: 4px solid #FFFFFF;
+  border-radius: 3px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(128, 128, 128, 0.03) inset;
+}
+.c-latest__right {
+  width: 80%; 
+}
+.c-latest__right h5 {
+  text-shadow: 0 0 4px #3d5ba9;
+  color: #617a6d; 
+}
+.c-latest__right img {
+  transition: 1s ease-in-out all;
+  width: 100%; 
+}
+.c-latest__right:hover img {
+  transform: scale(1.1); 
+}
+.c-latest__right:hover h5 {
+  text-shadow: 0 0 8px #3d5ba9; 
+}
+
+.font-body {
+  font-family: "Cairo Regular", sans-serif; }
+
+.font-body-bold {
+  font-family: "Cairo Bold", sans-serif; }
+
+.font-body-semibold {
+  font-family: "Cairo SemiBold", sans-serif; }
