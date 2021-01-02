@@ -19,7 +19,6 @@ class shopPage extends React.Component {
                     <CollectionPreview key={id} {...otherCollectionProps}/>
                 ))
             }
-                SHOP PAGE
             </div>
         );
     }
