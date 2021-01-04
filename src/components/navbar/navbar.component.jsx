@@ -4,8 +4,11 @@ import { Link } from 'react-router-dom';
 import './navbar.styles.scss';
 import logo from '../img/logo.png';
 import { auth } from '../../firebase/firebase.utils';
+import { connect } from 'react-redux';
+import CartIcon from '../cart-icon/cart-icon.component';
+import CartDropDown from '../cart-dropdown/cart-dropdown.component';
 
-const Navbar = ({ currentUser }) => (
+const Navbar = ({ currentUser, hidden }) => (
     <header className="site-header border-bottom bg-white fixed-top py-lg-0 py-3">
         <div className="container">
             <nav className="navbar font-body-bold px-0 position-relative">
@@ -39,11 +42,17 @@ const Navbar = ({ currentUser }) => (
                             <i className="icon icon-enter"></i>
                         </Link>
                     }
+                    <CartIcon/>
                     </div>
                 </div>
+                { hidden? null : <CartDropDown/> }
             </nav>
         </div>
     </header>
 )
+const mapStateToProps = ({user: {currentUser}, cart: { hidden } } ) => ({
+    currentUser,
+    hidden 
+});
 
-export default Navbar
+export default connect(mapStateToProps)(Navbar)
