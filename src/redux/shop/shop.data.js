@@ -24,7 +24,7 @@ import yogurtLight200  from '../../components/img/yogurt/yogurt-light.jpg'
 import totYogurt  from '../../components/img/yogurt/tot-yogurt.jpg'
 import frawlaYogurt200  from '../../components/img/yogurt/frawla-yogurt-200.jpg'
 import blackHoneyYogurt200  from '../../components/img/yogurt/black-honey.jpg'
-import healthyLogo from '../../components/img/banar-250-250.png'
+import healthyLogo from '../../components/img/healthy-logo.png'
 import yogurt2700 from '../../components/img/yogurt/yogurt2700.jpg'
 import vita400  from '../../components/img/chees/veta-chees.jpg'
 import thalaga400  from '../../components/img/chees/thlaga-chees.jpg'
@@ -32,39 +32,39 @@ import stanboly400  from '../../components/img/chees/estanboly-chees.jpg'
 import twable800  from '../../components/img/chees/twable-chees800.jpg'
 import twable400  from '../../components/img/chees/twable-chees400.jpg'
 import sheader550  from '../../components/img/chees/sheder-550.jpg'
-import sheader200  from '../../components/img/banar-250-250.png'
-import zyton550  from '../../components/img/banar-250-250.png'
+import sheader200  from '../../components/img/healthy-logo.png'
+import zyton550  from '../../components/img/healthy-logo.png'
 import zyton200  from '../../components/img/chees/zyton-chees200.jpg'
-import bastrma550  from '../../components/img/banar-250-250.png'
+import bastrma550  from '../../components/img/healthy-logo.png'
 import bastrma200  from '../../components/img/chees/basterma-chees200.jpg'
-import qareshchees from '../../components/img/banar-250-250.png'
+import qareshchees from '../../components/img/healthy-logo.png'
 import twableLbna500 from '../../components/img/chees/labna-twable500.jpg'
-import twableLbna200 from '../../components/img/banar-250-250.png'
-import qshtaLbna500 from '../../components/img/banar-250-250.png'
+import twableLbna200 from '../../components/img/healthy-logo.png'
+import qshtaLbna500 from '../../components/img/healthy-logo.png'
 import qshtaLbna200 from '../../components/img/chees/labna-cream200.jpg'
 import mesh500 from '../../components/img/chees/mesh.jpg'
-import gaStanboly7k from '../../components/img/banar-250-250.png'
+import gaStanboly7k from '../../components/img/healthy-logo.png'
 import Stanboly4k from '../../components/img/chees/stanboly4k.jpg'
 import mango850  from '../../components/img/juice/mango850.jpg'
-import mango250  from '../../components/img/banar-250-250.png'
+import mango250  from '../../components/img/healthy-logo.png'
 import apple850  from '../../components/img/juice/apple850.jpg'
 import apple250  from '../../components/img/juice/apple250.jpg'
 import pina850  from '../../components/img/juice/pineap850.jpg'
-import pina250  from '../../components/img/banar-250-250.png'
+import pina250  from '../../components/img/healthy-logo.png'
 import gwafa850  from '../../components/img/juice/Guafa850.jpg'
 import gwafa250  from '../../components/img/juice/Guafa250.jpg'
-import koktel850  from '../../components/img/banar-250-250.png'
-import koktel250  from '../../components/img/banar-250-250.png'
+import koktel850  from '../../components/img/healthy-logo.png'
+import koktel250  from '../../components/img/healthy-logo.png'
 import orange850  from '../../components/img/juice/orange850.jpg'
 import orange250 from '../../components/img/juice/orange250.jpg'
-import roman850 from '../../components/img/banar-250-250.png'
-import roman250 from '../../components/img/banar-250-250.png'
-import vanilia3k  from '../../components/img/banar-250-250.png'
-import chico3k  from '../../components/img/banar-250-250.png'
-import frawla3k  from '../../components/img/banar-250-250.png'
-import vanilia1k  from '../../components/img/banar-250-250.png'
-import chico1k  from '../../components/img/banar-250-250.png'
-import frawla1k  from '../../components/img/banar-250-250.png'
+import roman850 from '../../components/img/healthy-logo.png'
+import roman250 from '../../components/img/healthy-logo.png'
+import vanilia3k  from '../../components/img/healthy-logo.png'
+import chico3k  from '../../components/img/healthy-logo.png'
+import frawla3k  from '../../components/img/healthy-logo.png'
+import vanilia1k  from '../../components/img/healthy-logo.png'
+import chico1k  from '../../components/img/healthy-logo.png'
+import frawla1k  from '../../components/img/healthy-logo.png'
 import vanilia200  from '../../components/img/iceCream/icecreamVanilia200.jpg'
 import chico200  from '../../components/img/iceCream/icecreamChoc200.jpg'
 import frawla200  from '../../components/img/iceCream/icecreamFarawla200.jpg'
@@ -74,157 +74,8 @@ import butter250g  from '../../components/img/butter/zebda1k.jpg'
 import samna750  from '../../components/img/butter/samna.jpg'
 import morta  from '../../components/img/butter/morta.jpg'
 
-export const healthy = [
-    {
-        "id": "62",
-        "name": "أيس كريم حليب 3 كجم",
-        "price": "55",
-        "offerPrice": "50",
-        "isOffered": false,
-        "imageUrl": vanilia3k,
-        "slug": "vanilia3k"
-    },
-    {
-        "id": "63",
-        "name": "أيس كريم شيكولاتة 3 كجم",
-        "price": "55",
-        "offerPrice": "50",
-        "isOffered": false,
-        "image": chico3k,
-        "slug": "chico3k"
-    },
-    {
-        "id": "64",
-        "name": "أيس كريم فراولة 3 كجم",
-        "price": "55",
-        "offerPrice": "50",
-        "isOffered": false,
-        "image": frawla3k,
-        "slug": "frawla3k"
-    },
-    {
-        "id": "65",
-        "name": "أيس كريم حليب 800 جم",
-        "price": "25",
-        "offerPrice": "22",
-        "isOffered": false,
-        "image": vanilia1k,
-        "slug": "vanilia1k"
-
-    },
-    {
-        "id": "66",
-        "name": "أيس كريم شيكولاتة 800 جم",
-        "price": "25",
-        "offerPrice": "22",
-        "isOffered": false,
-        "image": chico1k,
-        "slug": "chico1k"
-    },
-    {
-        "id": "67",
-        "name": "أيس كريم فراولة 800 جم",
-        "price": "25",
-        "offerPrice": "22",
-        "isOffered": false,
-        "image": frawla1k,
-        "slug": "frawla1k"
-    },
-    {
-        "id": "68",
-        "name": "أيس كريم زبادي الفراولة 800 جم",
-        "price": "25",
-        "offerPrice": "22",
-        "isOffered": false,
-        "image": frawla1k,
-        "slug": "frawla1k"
-    },
-    {
-        "id": "69",
-        "name": "أيس كريم حليب 200 جم",
-        "price": "7",
-        "offerPrice": "6",
-        "isOffered": false,
-        "image": vanilia200,
-        "slug": "vanilia200"
-    },
-    {
-        "id": "70",
-        "name": "أيس كريم شيكولاتة 200 جم",
-        "price": "7",
-        "offerPrice": "6",
-        "isOffered": false,
-        "image": chico200,
-        "slug": "chico200"
-    },
-    {
-        "id": "71",
-        "name": "أيس كريم فراولة 200 جم",
-        "price": "7",
-        "offerPrice": "6",
-        "isOffered": false,
-        "image": frawla200,
-        "slug": "frawla200"
-    },
-    {
-        "id": "72",
-        "name": "أيس كريم زبادي الفراولة 200 جم",
-        "price": "7",
-        "offerPrice": "6",
-        "isOffered": false,
-        "image": frawla200,
-        "slug": "frawla200"
-    },
-    {
-        "id": "73",
-        "name": "زبدة بلدي منزوعة الملح 1 كجم",
-        "price": "100",
-        "offerPrice": "95",
-        "isOffered": false,
-        "image": butter1k,
-        "slug": "butter1k"
-    },
-    {
-        "id": "74",
-        "name": "زبدة بلدي منزوعة الملح 400 جم",
-        "price": "50",
-        "offerPrice": "50",
-        "isOffered": false,
-        "image": butter400g,
-        "slug": "butter400g"
-    },
-    {
-        "id": "75",
-        "name": "زبدة بلدي منزوعة الملح 250 جم",
-        "price": "30",
-        "offerPrice": "26",
-        "isOffered": false,
-        "image": butter250g,
-        "slug": "butter250g"
-    },
-    {
-        "id": "76",
-        "name": "سمنة بلدي فلاحي 750 جم",
-        "price": "120",
-        "offerPrice": "120",
-        "isOffered": false,
-        "image": samna750,
-        "slug": "samna750"
-
-    },
-    {
-        "id": "77",
-        "name": "مورتة 180 جم",
-        "price": "22",
-        "offerPrice": "20",
-        "isOffered": false,
-        "image": morta,
-        "slug": "morta"
-    }
-]
-
-const SHOP_DATA = [
-  {
+const SHOP_DATA ={
+  milks:{
     id: 1,
     title: 'حليب طبيعي',
     routeName: 'milks',
@@ -294,9 +145,9 @@ const SHOP_DATA = [
     },
     ]
   },
-  {
+  rayeb:{
     id: 2,
-    title: 'رايب',
+    title: 'رايب طبيعي',
     routeName: 'rayeb',
     items: [
       {
@@ -383,9 +234,9 @@ const SHOP_DATA = [
     }
     ]
   },
-  {
+  yogurt:{
     id: 3,
-    title: 'زبادي',
+    title: 'زبادي طبيعي',
     routeName: 'yogurt',
     items: [
       {
@@ -498,9 +349,9 @@ const SHOP_DATA = [
     },
     ]
   },
-  {
+  cheese:{
     id: 4,
-    title: 'جبن',
+    title: 'أجبان طبيعية',
     routeName: 'cheese',
     items: [
       {
@@ -677,9 +528,9 @@ const SHOP_DATA = [
     },
     ]
   },
-  {
+  juice:{
     id: 5,
-    title: 'عصائر',
+    title: 'عصائر طبيعية',
     routeName: 'juice',
     items: [
       {
@@ -807,9 +658,167 @@ const SHOP_DATA = [
         isOffered: true,
         imageUrl: roman250,
         slug: "roman250"
+    }
+]
     },
-    ]
-  }
-];
+    iceCream:{
+        id: 6,
+        title: 'أيس كريم',
+        routeName: 'iceCream',
+        items: [{
+            id: 62,
+            name: "أيس كريم حليب 3 كجم",
+            price: 55,
+            offerPrice: 50,
+            isOffered: false,
+            imageUrl: vanilia3k,
+            slug: "vanilia3k"
+        },
+        {
+            id: 63,
+            name: "أيس كريم شيكولاتة 3 كجم",
+            price: 55,
+            offerPrice: 50,
+            isOffered: false,
+            imageUrl: chico3k,
+            slug: "chico3k"
+        },
+        {
+            id: 64,
+            name: "أيس كريم فراولة 3 كجم",
+            price: 55,
+            offerPrice: 50,
+            isOffered: false,
+            imageUrl: frawla3k,
+            slug: "frawla3k"
+        },
+        {
+            id: 65,
+            name:"أيس كريم حليب 800 جم",
+            price: 25,
+            offerPrice: 22,
+            isOffered: false,
+            imageUrl: vanilia1k,
+            slug: "vanilia1k"
 
+        },
+        {
+            id: 66,
+            name: "أيس كريم شيكولاتة 800 جم",
+            price: 25,
+            offerPrice: 22,
+            isOffered: false,
+            imageUrl: chico1k,
+            slug: "chico1k"
+        },
+        {
+            id: 67,
+            name: "أيس كريم فراولة 800 جم",
+            price: 25,
+            offerPrice: 22,
+            isOffered: false,
+            imageUrl: frawla1k,
+            slug: "frawla1k"
+        },
+        {
+            id: 68,
+            name: "أيس كريم زبادي الفراولة 800 جم",
+            price: 25,
+            offerPrice: 22,
+            isOffered: false,
+            imageUrl: frawla1k,
+            slug: "frawla1k"
+        },
+        {
+            id: 69,
+            name: "أيس كريم حليب 200 جم",
+            price: 7,
+            offerPrice: 6,
+            isOffered: false,
+            imageUrl: vanilia200,
+            slug: "vanilia200"
+        },
+        {
+            id: 70,
+            name: "أيس كريم شيكولاتة 200 جم",
+            price: 7,
+            offerPrice: 6,
+            isOffered: false,
+            imageUrl: chico200,
+            slug: "chico200"
+        },
+        {
+            id: 71,
+            name: "أيس كريم فراولة 200 جم",
+            price: 7,
+            offerPrice: 6,
+            isOffered: false,
+            imageUrl: frawla200,
+            slug: "frawla200"
+        },
+        {
+            id: 72,
+            name: "أيس كريم زبادي الفراولة 200 جم",
+            price: 7,
+            offerPrice: 6,
+            isOffered: false,
+            imageUrl: frawla200,
+            slug: "frawla200"
+        }
+    ]
+},
+butter:{
+    id:7,
+    title: 'مسليات',
+    routeName: 'butter',
+    items:[
+        {
+            id: 73,
+            name: "زبدة بلدي منزوعة الملح 1 كجم",
+            price: 100,
+            offerPrice: 95,
+            isOffered: false,
+            imageUrl: butter1k,
+            slug: "butter1k"
+        },
+        {
+            id: 74,
+            name: "زبدة بلدي منزوعة الملح 400 جم",
+            price: 50,
+            offerPrice: 50,
+            isOffered: false,
+            imageUrl: butter400g,
+            slug: "butter400g"
+        },
+        {
+            id: 75,
+            name: "زبدة بلدي منزوعة الملح 250 جم",
+            price: 30,
+            offerPrice: 26,
+            isOffered: false,
+            imageUrl: butter250g,
+            slug: "butter250g"
+        },
+        {
+            id: 76,
+            name: "سمنة بلدي فلاحي 750 جم",
+            price: 120,
+            offerPrice: 120,
+            isOffered: false,
+            imageUrl: samna750,
+            slug: "samna750"
+    
+        },
+        {
+            id: 77,
+            name: "مورتة 180 جم",
+            price: 22,
+            offerPrice: 20,
+            isOffered: false,
+            imageUrl: morta,
+            slug: "morta"
+        }
+    ]
+}
+};
 export default SHOP_DATA;
