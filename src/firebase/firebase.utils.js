@@ -9,8 +9,8 @@ const config ={
     storageBucket: "healthydam-db.appspot.com",
     messagingSenderId: "514263680119",
     appId: "1:514263680119:web:8f5a04f4cd0c861d6c7272",
-    measurementId: "G-CHB0Q078HE"
-}
+    databaseURL: 'https://healthdam-db.firebaseio.com',
+    }
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
     if(!userAuth) return;
