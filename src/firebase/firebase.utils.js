@@ -5,12 +5,13 @@ import 'firebase/firebase-auth';
 const config ={
     apiKey: "AIzaSyCuATLgYpzR-QfnKkL-pgV0_IJ-s3KjbgI",
     authDomain: "healthydam-db.firebaseapp.com",
+    databaseURL: "https://healthydam-db-default-rtdb.europe-west1.firebasedatabase.app",
     projectId: "healthydam-db",
     storageBucket: "healthydam-db.appspot.com",
     messagingSenderId: "514263680119",
     appId: "1:514263680119:web:8f5a04f4cd0c861d6c7272",
-    databaseURL: 'https://healthdam-db.firebaseio.com',
-    }
+    measurementId: "G-CHB0Q078HE"
+  }
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
     if(!userAuth) return;
