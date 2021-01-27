@@ -72,468 +72,475 @@ import butter1k  from '../../components/img/butter/zebda1k.jpg'
 import butter400g  from '../../components/img/butter/zebda400.jpg'
 import butter250g  from '../../components/img/butter/zebda1k.jpg'
 import samna750  from '../../components/img/butter/samna.jpg'
-import morta  from '../../components/img/butter/morta.jpg'
+import morta  from '../../components/img/butter/morta.jpg';
+import honey950  from '../../components/img/honey/honey_950gm.jpg';
+import honey450  from '../../components/img/honey/honey450.jpg';
+import honey_mwaleh450  from '../../components/img/honey/honey_mwaleh450 gm.jpg';
+import honyHabetBaraka  from '../../components/img/honey/honey_habt_albaraka450.jpg';
+import honeySkwez450  from '../../components/img/honey/honey_skwez_450gm.jpg';
+import honeyNuts  from '../../components/img/honey/honey with nuts.jpg';
+import honeyGensing450  from '../../components/img/honey/honey with gensing.jpg';
 
 const SHOP_DATA ={
-  milks:{
-    id: 1,
-    title: 'حليب طبيعي',
-    routeName: 'milks',
-    items: [
-      {
+    milks:{
         id: 1,
-        name: "حليب طبيعي كامل الدسم 850 مل",
-        price: 18.5,
-        offerPrice: 15,
-        isOffered: "true",
-        imageUrl: fullMilk,
-        slug: "fullMilk"
+        title: 'حليب طبيعي',
+        routeName: 'milks',
+        items: [
+        {
+            id: 1,
+            name: "حليب طبيعي كامل الدسم 850 مل",
+            price: 18.5,
+            offerPrice: 15,
+            isOffered: "true",
+            imageUrl: fullMilk,
+            slug: "fullMilk"
+        },
+        {
+            id: 2,
+            name: "حليب طبيعي خالي الدسم 850 مل",
+            price: 18.5,
+            offerPrice: 15,
+            isOffered: true,
+            imageUrl: lightMilk,
+            slug: "lightMilk"
+        },
+        {
+            id: 3,
+            name: "حليب كامل الدسم بالشيكولاته 850 مل",
+            price: 19.5,
+            offerPrice: 16,
+            isOffered: true,
+            imageUrl: chocMilk,
+            slug: "chocMilk"
+        },
+        {
+            id: 4,
+            name: "حليب طبيعي كامل الدسم بالتمر 850 مل",
+            price: 19.5,
+            offerPrice: 16,
+            isOffered: true,
+            imageUrl: tamrMilk,
+            slug: "tamrMilk"
+        },
+        {
+            id: 5,
+            name: "حليب كامل الدسم بالشيكولاته 270 مل",
+            price: 8.5,
+            offerPrice: 8,
+            isOffered: true,
+            imageUrl: chokMilk270,
+            slug: "chokMilk270"
+        },
+        {
+            id: 6,
+            name: "حليب كامل الدسم بالتمر 270 مل",
+            price: 8.5,
+            offerPrice: 8,
+            isOffered: true,
+            imageUrl: tamrMilk270,
+            slug: "tamrMilk270"
+        },
+        {
+            id: 7,
+            name: "حليب كامل الدسم بالقهوة 270 مل",
+            price: 8.5,
+            offerPrice: 8,
+            isOffered: true,
+            imageUrl: coffeeMilk,
+            slug: "coffeeMilk"
+        },
+        ]
     },
-    {
+    rayeb:{
         id: 2,
-        name: "حليب طبيعي خالي الدسم 850 مل",
-        price: 18.5,
-        offerPrice: 15,
-        isOffered: true,
-        imageUrl: lightMilk,
-        slug: "lightMilk"
+        title: 'رايب طبيعي',
+        routeName: 'rayeb',
+        items: [
+        {
+            id: 8,
+            name: "رايب كامل الدسم سادة 850 مل",
+            price: 18.5,
+            offerPrice: 16,
+            isOffered: true,
+            imageUrl: rayeb850,
+            slug: "rayeb850"
+        },
+        {
+            id: 9,
+            name: "رايب خالي الدسم سادة 850 مل",
+            price: 20,
+            offerPrice: 18,
+            isOffered: true,
+            imageUrl: rayebLight850,
+            slug: "rayebLight850"
+        },
+        {
+            id: 10,
+            name: "رايب كامل الدسم سادة 270 مل",
+            price: 8.5,
+            offerPrice: 8,
+            isOffered: true,
+            imageUrl: rayeb270,
+            slug: "rayeb270"
+        },
+        {
+            id: 11,
+            name: "رايب كامل الدسم بالفراولة 270 مل",
+            price: 8.5,
+            offerPrice: 8,
+            isOffered: true,
+            imageUrl: rayebFrawla270,
+            slug: "rayebFrawla270"
+
+        },
+        {
+            id: 12,
+            name: "رايب كامل الدسم بالخوخ 270 مل",
+            price: 8.5,
+            offerPrice: 8.5,
+            isOffered: true,
+            imageUrl: rayebKhokh270,
+            slug: "rayebKhokh270"
+        },
+        {
+            id: 13,
+            name: "رايب كامل الدسم بالتوت 270 مل",
+            price: 10,
+            offerPrice: 9,
+            isOffered: true,
+            imageUrl: rayebTot270,
+            slug: "rayebTot270"
+        },
+        {
+            id: 14,
+            name: "رايب أطفال كامل الدسم بالفراولة 200 مل",
+            price: 7.5,
+            offerPrice: 7.5,
+            isOffered: true,
+            imageUrl: rayebFrawla200,
+            slug: "rayebFrawla200"
+        },
+        {
+            id: 15,
+            name: "رايب أطفال كامل الدسم بالخوخ 200 مل",
+            price: 7.5,
+            offerPrice: 7.5,
+            isOffered: true,
+            imageUrl: rayebKhokh200,
+            slug: "rayebKhokh200"
+        },
+        {
+            id: 16,
+            name: "رايب أطفال كامل الدسم بالمانجو 200 مل",
+            price: 7.5,
+            offerPrice: 7.5,
+            isOffered: true,
+            imageUrl: rayebMango200,
+            slug: "rayebMango200"
+        }
+        ]
     },
-    {
+    yogurt:{
         id: 3,
-        name: "حليب طبيعي كامل الدسم بالشيكولاته 850 مل",
-        price: 19.5,
-        offerPrice: 16,
-        isOffered: true,
-        imageUrl: chocMilk,
-        slug: "chocMilk"
+        title: 'زبادي طبيعي',
+        routeName: 'yogurt',
+        items: [
+        {
+            id: 17,
+            name: "زبادي كامل الدسم سادة 75 جم",
+            price: 2.5,
+            offerPrice: 2,
+            isOffered: true,
+            imageUrl: yogurt75,
+            slug: "yogurt75"
+        },
+        {
+            id: 18,
+            name: "زبادي كامل الدسم سادة 105 جم",
+            price: 3.5,
+            offerPrice: 3,
+            isOffered: true,
+            imageUrl: yogurt105,
+            slug: "yogurt105"
+        },
+        {
+            id: 19,
+            name: "زبادي كامل الدسم بالفراولة 75 جم",
+            price: 2.5,
+            offerPrice: 2,
+            isOffered: true,
+            imageUrl: frawlaYogurt75,
+            slug: "frawlaYogurt75"
+        },
+        {
+            id: 20,
+            name: "زبادي خالي الدسم سادة 105 جم",
+            price: 3.5,
+            offerPrice: 3,
+            isOffered: true,
+            imageUrl: lightYogurt105,
+            slug: "lightYogurt105"
+        },
+        {
+            id: 21,
+            name: "زبادي كامل الدسم بالعسل 105 جم",
+            price: 3.5,
+            offerPrice: 3.5,
+            isOffered: true,
+            imageUrl: honeyYogurt105,
+            slug: "honeyYogurt105"
+        },
+        {
+            id: 22,
+            name: "زبادي كامل الدسم سادة برطمان 200 جم",
+            price: 9.5,
+            offerPrice: 9.5,
+            isOffered: true,
+            imageUrl: yogurt200,
+            slug: "yogurt200"
+        },
+        {
+            id: 23,
+            name: "زبادي خالي الدسم سادة برطمان 200 جم",
+            price: 9.5,
+            offerPrice: 9.5,
+            isOffered: true,
+            imageUrl: yogurtLight200,
+            slug: "yogurtLight200"
+        },
+        {
+            id: 24,
+            name: "زبادي كامل الدسم بالتوت برطمان 200 جم",
+            price: 11,
+            offerPrice: 11,
+            isOffered: true,
+            imageUrl: totYogurt,
+            slug: "totYogurt"
+        },
+        {
+            id: 25,
+            name: "زبادي كامل الدسم بالفراولة برطمان 200 جم",
+            price: 11,
+            offerPrice: 11,
+            isOffered: true,
+            imageUrl: frawlaYogurt200,
+            slug: "frawlaYogurt200"
+        },
+        {
+            id: 26,
+            name: "زبادي كامل الدسم بالعسل الاسود برطمان 200 جم",
+            price: 11,
+            offerPrice: 11,
+            isOffered: true,
+            imageUrl: blackHoneyYogurt200,
+            slug: "blackHoneyYogurt200"
+        },
+        {
+            id: 27,
+            name: "جالون زبادي كامل الدسم 400 جم",
+            price: 15,
+            offerPrice: 13,
+            isOffered: true,
+            imageUrl: healthyLogo,
+            slug: "yogurt400"
+        },
+        {
+            id: 28,
+            name: "جالون زبادي كامل الدسم 2.7 كجم",
+            price: 60,
+            offerPrice: 50,
+            isOffered: true,
+            imageUrl: yogurt2700,
+            slug: "yogurt2700"
+        },
+        ]
     },
-    {
+    cheese:{
         id: 4,
-        name: "حليب طبيعي كامل الدسم بالتمر 850 مل",
-        price: 19.5,
-        offerPrice: 16,
-        isOffered: true,
-        imageUrl: tamrMilk,
-        slug: "tamrMilk"
-    },
-    {
-        id: 5,
-        name: "حليب كامل الدسم بالشيكولاته 270 مل",
-        price: 8.5,
-        offerPrice: 8,
-        isOffered: true,
-        imageUrl: chokMilk270,
-        slug: "chokMilk270"
-    },
-    {
-        id: 6,
-        name: "حليب كامل الدسم بالتمر 270 مل",
-        price: 8.5,
-        offerPrice: 8,
-        isOffered: true,
-        imageUrl: tamrMilk270,
-        slug: "tamrMilk270"
-    },
-    {
-        id: 7,
-        name: "حليب كامل الدسم بالقهوة 270 مل",
-        price: 8.5,
-        offerPrice: 8,
-        isOffered: true,
-        imageUrl: coffeeMilk,
-        slug: "coffeeMilk"
-    },
-    ]
-  },
-  rayeb:{
-    id: 2,
-    title: 'رايب طبيعي',
-    routeName: 'rayeb',
-    items: [
-      {
-        id: 8,
-        name: "رايب كامل الدسم سادة 850 مل",
-        price: 18.5,
-        offerPrice: 16,
-        isOffered: true,
-        imageUrl: rayeb850,
-        slug: "rayeb850"
-    },
-    {
-        id: 9,
-        name: "رايب خالي الدسم سادة 850 مل",
-        price: 20,
-        offerPrice: 18,
-        isOffered: true,
-        imageUrl: rayebLight850,
-        slug: "rayebLight850"
-    },
-    {
-        id: 10,
-        name: "رايب كامل الدسم سادة 270 مل",
-        price: 8.5,
-        offerPrice: 8,
-        isOffered: true,
-        imageUrl: rayeb270,
-        slug: "rayeb270"
-    },
-    {
-        id: 11,
-        name: "رايب كامل الدسم بالفراولة 270 مل",
-        price: 8.5,
-        offerPrice: 8,
-        isOffered: true,
-        imageUrl: rayebFrawla270,
-        slug: "rayebFrawla270"
+        title: 'أجبان طبيعية',
+        routeName: 'cheese',
+        items: [
+        {
+            id: 29,
+            name: "جبنة فيتا 400 جم",
+            price: 24,
+            offerPrice: 22,
+            isOffered: true,
+            imageUrl: vita400,
+            slug: "vita400"
+        },
+        {
+            id: 30,
+            name: "جبنة ثلاجة 400 جم",
+            price: 24,
+            offerPrice: 22,
+            isOffered: true,
+            imageUrl: thalaga400,
+            slug: "thalaga400"
+        },
+        {
+            id: 31,
+            name: "جبنة اسطنبولي 400 جم",
+            price: 24,
+            offerPrice: 22,
+            isOffered: true,
+            imageUrl: stanboly400,
+            slug: "stanboly400"
+        },
+        {
+            id: 32,
+            name: "جبنة توابل 800 جم",
+            price: 33,
+            offerPrice: 28,
+            isOffered: true,
+            imageUrl: twable800,
+            slug: "twable800"
 
+        },
+        {
+            id: 33,
+            name: "جبنة توابل 400 جم",
+            price: 20,
+            offerPrice: 16,
+            isOffered: true,
+            imageUrl: twable400,
+            slug: "twable400"
+        },
+        {
+            id: 34,
+            name: "جبنة كريمي بالشيدر 550 جم",
+            price: 35,
+            offerPrice: 33,
+            isOffered: true,
+            imageUrl: sheader550,
+            slug: "sheader550"
+        },
+        {
+            id: 35,
+            name: "جبنة كريمي بالشيدر 200 جم",
+            price: 19,
+            offerPrice: 20,
+            isOffered: true,
+            imageUrl: sheader200,
+            slug: "sheader200"
+        },
+        {
+            id: 36,
+            name: "جبنة كريمي بالزيتون 550 جم",
+            price: 35,
+            offerPrice: 33,
+            isOffered: true,
+            imageUrl: zyton550,
+            slug: "zyton550"
+        },
+        {
+            id: 37,
+            name: "جبنة كريمي بالزيتون 200 جم",
+            price: 19,
+            offerPrice: 20,
+            isOffered: true,
+            imageUrl: zyton200,
+            slug: "zyton200"
+        },
+        {
+            id: 38,
+            name: "جبنة كريمي بالبسطرمة 550 جم",
+            price: 35,
+            offerPrice: 33,
+            isOffered: true,
+            imageUrl: bastrma550,
+            slug: "bastrma550"
+        },
+        {
+            id: 39,
+            name: "جبنة كريمي بالبسطرمة 200 جم",
+            price: 19,
+            offerPrice: 20,
+            isOffered: true,
+            imageUrl: bastrma200,
+            slug: "bastrma200"
+        },
+        {
+            id: 40,
+            name: "جبنة قريش 500 جم",
+            price: 25,
+            offerPrice: 22,
+            isOffered: true,
+            imageUrl: qareshchees,
+            slug: "qareshchees"
+        },
+        {
+            id: 41,
+            name: "لبنة بالتوابل 400 جم",
+            price: 30,
+            offerPrice: 28,
+            isOffered: true,
+            imageUrl: twableLbna500,
+            slug: twableLbna500
+        },
+        {
+            id: 42,
+            name: "لبنة بالتوابل 200 جم",
+            price: 15,
+            offerPrice: 15,
+            isOffered: true,
+            imageUrl: twableLbna200,
+            slug: "twableLbna200"
+        },
+        {
+            id: 43,
+            name: "لبنة بالقشطة 400 جم",
+            price: 30,
+            offerPrice: 28,
+            isOffered: true,
+            imageUrl: qshtaLbna500,
+            slug: "qshtaLbna500"
+        },
+        {
+            id: 44,
+            name: "لبنة بالقشطة 200 جم",
+            price: 15,
+            offerPrice: 15,
+            isOffered: true,
+            imageUrl: qshtaLbna200,
+            slug: "qshtaLbna200"
+        },
+        {
+            id: 45,
+            name: "مش كريمي 500 جم",
+            price: 22,
+            offerPrice: 20,
+            isOffered: true,
+            imageUrl: mesh500,
+            slug: "mesh500"
+        },
+        {
+            id: 46,
+            name: "جالون جبنة فيتا/اسطنبولي/ملح خفيف 7 كجم",
+            price: 220,
+            offerPrice: 210,
+            isOffered: true,
+            imageUrl: gaStanboly7k,
+            slug: "gaStanboly7k"
+        },
+        {
+            id: 47,
+            name: "جالون جبنة فيتا/اسطنبولي/ملح خفيف 4 كجم",
+            price: 160,
+            offerPrice: 150,
+            isOffered: true,
+            imageUrl: Stanboly4k,
+            slug: "Stanboly4k"
+        },
+        ]
     },
-    {
-        id: 12,
-        name: "رايب كامل الدسم بالخوخ 270 مل",
-        price: 8.5,
-        offerPrice: 8.5,
-        isOffered: true,
-        imageUrl: rayebKhokh270,
-        slug: "rayebKhokh270"
-    },
-    {
-        id: 13,
-        name: "رايب كامل الدسم بالتوت 270 مل",
-        price: 10,
-        offerPrice: 9,
-        isOffered: true,
-        imageUrl: rayebTot270,
-        slug: "rayebTot270"
-    },
-    {
-        id: 14,
-        name: "رايب أطفال كامل الدسم بالفراولة 200 مل",
-        price: 7.5,
-        offerPrice: 7.5,
-        isOffered: true,
-        imageUrl: rayebFrawla200,
-        slug: "rayebFrawla200"
-    },
-    {
-        id: 15,
-        name: "رايب أطفال كامل الدسم بالخوخ 200 مل",
-        price: 7.5,
-        offerPrice: 7.5,
-        isOffered: true,
-        imageUrl: rayebKhokh200,
-        slug: "rayebKhokh200"
-    },
-    {
-        id: 16,
-        name: "رايب أطفال كامل الدسم بالمانجو 200 مل",
-        price: 7.5,
-        offerPrice: 7.5,
-        isOffered: true,
-        imageUrl: rayebMango200,
-        slug: "rayebMango200"
-    }
-    ]
-  },
-  yogurt:{
-    id: 3,
-    title: 'زبادي طبيعي',
-    routeName: 'yogurt',
-    items: [
-      {
-        id: 17,
-        name: "زبادي كامل الدسم سادة 75 جم",
-        price: 2.5,
-        offerPrice: 2,
-        isOffered: true,
-        imageUrl: yogurt75,
-        slug: "yogurt75"
-    },
-    {
-        id: 18,
-        name: "زبادي كامل الدسم سادة 105 جم",
-        price: 3.5,
-        offerPrice: 3,
-        isOffered: true,
-        imageUrl: yogurt105,
-        slug: "yogurt105"
-    },
-    {
-        id: 19,
-        name: "زبادي كامل الدسم بالفراولة 75 جم",
-        price: 2.5,
-        offerPrice: 2,
-        isOffered: true,
-        imageUrl: frawlaYogurt75,
-        slug: "frawlaYogurt75"
-    },
-    {
-        id: 20,
-        name: "زبادي خالي الدسم سادة 105 جم",
-        price: 3.5,
-        offerPrice: 3,
-        isOffered: true,
-        imageUrl: lightYogurt105,
-        slug: "lightYogurt105"
-    },
-    {
-        id: 21,
-        name: "زبادي كامل الدسم بالعسل 105 جم",
-        price: 3.5,
-        offerPrice: 3.5,
-        isOffered: true,
-        imageUrl: honeyYogurt105,
-        slug: "honeyYogurt105"
-    },
-    {
-        id: 22,
-        name: "زبادي كامل الدسم سادة برطمان 200 جم",
-        price: 9.5,
-        offerPrice: 9.5,
-        isOffered: true,
-        imageUrl: yogurt200,
-        slug: "yogurt200"
-    },
-    {
-        id: 23,
-        name: "زبادي خالي الدسم سادة برطمان 200 جم",
-        price: 9.5,
-        offerPrice: 9.5,
-        isOffered: true,
-        imageUrl: yogurtLight200,
-        slug: "yogurtLight200"
-    },
-    {
-        id: 24,
-        name: "زبادي كامل الدسم بالتوت برطمان 200 جم",
-        price: 11,
-        offerPrice: 11,
-        isOffered: true,
-        imageUrl: totYogurt,
-        slug: "totYogurt"
-    },
-    {
-        id: 25,
-        name: "زبادي كامل الدسم بالفراولة برطمان 200 جم",
-        price: 11,
-        offerPrice: 11,
-        isOffered: true,
-        imageUrl: frawlaYogurt200,
-        slug: "frawlaYogurt200"
-    },
-    {
-        id: 26,
-        name: "زبادي كامل الدسم بالعسل الاسود برطمان 200 جم",
-        price: 11,
-        offerPrice: 11,
-        isOffered: true,
-        imageUrl: blackHoneyYogurt200,
-        slug: "blackHoneyYogurt200"
-    },
-    {
-        id: 27,
-        name: "جالون زبادي كامل الدسم 400 جم",
-        price: 15,
-        offerPrice: 13,
-        isOffered: true,
-        imageUrl: healthyLogo,
-        slug: "yogurt400"
-    },
-    {
-        id: 28,
-        name: "جالون زبادي كامل الدسم 2.7 كجم",
-        price: 60,
-        offerPrice: 50,
-        isOffered: true,
-        imageUrl: yogurt2700,
-        slug: "yogurt2700"
-    },
-    ]
-  },
-  cheese:{
-    id: 4,
-    title: 'أجبان طبيعية',
-    routeName: 'cheese',
-    items: [
-      {
-        id: 29,
-        name: "جبنة فيتا 400 جم",
-        price: 24,
-        offerPrice: 22,
-        isOffered: true,
-        imageUrl: vita400,
-        slug: "vita400"
-    },
-    {
-        id: 30,
-        name: "جبنة ثلاجة 400 جم",
-        price: 24,
-        offerPrice: 22,
-        isOffered: true,
-        imageUrl: thalaga400,
-        slug: "thalaga400"
-    },
-    {
-        id: 31,
-        name: "جبنة اسطنبولي 400 جم",
-        price: 24,
-        offerPrice: 22,
-        isOffered: true,
-        imageUrl: stanboly400,
-        slug: "stanboly400"
-    },
-    {
-        id: 32,
-        name: "جبنة توابل 800 جم",
-        price: 33,
-        offerPrice: 28,
-        isOffered: true,
-        imageUrl: twable800,
-        slug: "twable800"
-
-    },
-    {
-        id: 33,
-        name: "جبنة توابل 400 جم",
-        price: 20,
-        offerPrice: 16,
-        isOffered: true,
-        imageUrl: twable400,
-        slug: "twable400"
-    },
-    {
-        id: 34,
-        name: "جبنة كريمي بالشيدر 550 جم",
-        price: 35,
-        offerPrice: 33,
-        isOffered: true,
-        imageUrl: sheader550,
-        slug: "sheader550"
-    },
-    {
-        id: 35,
-        name: "جبنة كريمي بالشيدر 200 جم",
-        price: 19,
-        offerPrice: 20,
-        isOffered: true,
-        imageUrl: sheader200,
-        slug: "sheader200"
-    },
-    {
-        id: 36,
-        name: "جبنة كريمي بالزيتون 550 جم",
-        price: 35,
-        offerPrice: 33,
-        isOffered: true,
-        imageUrl: zyton550,
-        slug: "zyton550"
-    },
-    {
-        id: 37,
-        name: "جبنة كريمي بالزيتون 200 جم",
-        price: 19,
-        offerPrice: 20,
-        isOffered: true,
-        imageUrl: zyton200,
-        slug: "zyton200"
-    },
-    {
-        id: 38,
-        name: "جبنة كريمي بالبسطرمة 550 جم",
-        price: 35,
-        offerPrice: 33,
-        isOffered: true,
-        imageUrl: bastrma550,
-        slug: "bastrma550"
-    },
-    {
-        id: 39,
-        name: "جبنة كريمي بالبسطرمة 200 جم",
-        price: 19,
-        offerPrice: 20,
-        isOffered: true,
-        imageUrl: bastrma200,
-        slug: "bastrma200"
-    },
-    {
-        id: 40,
-        name: "جبنة قريش 500 جم",
-        price: 25,
-        offerPrice: 22,
-        isOffered: true,
-        imageUrl: qareshchees,
-        slug: "qareshchees"
-    },
-    {
-        id: 41,
-        name: "لبنة بالتوابل 400 جم",
-        price: 30,
-        offerPrice: 28,
-        isOffered: true,
-        imageUrl: twableLbna500,
-        slug: twableLbna500
-    },
-    {
-        id: 42,
-        name: "لبنة بالتوابل 200 جم",
-        price: 15,
-        offerPrice: 15,
-        isOffered: true,
-        imageUrl: twableLbna200,
-        slug: "twableLbna200"
-    },
-    {
-        id: 43,
-        name: "لبنة بالقشطة 400 جم",
-        price: 30,
-        offerPrice: 28,
-        isOffered: true,
-        imageUrl: qshtaLbna500,
-        slug: "qshtaLbna500"
-    },
-    {
-        id: 44,
-        name: "لبنة بالقشطة 200 جم",
-        price: 15,
-        offerPrice: 15,
-        isOffered: true,
-        imageUrl: qshtaLbna200,
-        slug: "qshtaLbna200"
-    },
-    {
-        id: 45,
-        name: "مش كريمي 500 جم",
-        price: 22,
-        offerPrice: 20,
-        isOffered: true,
-        imageUrl: mesh500,
-        slug: "mesh500"
-    },
-    {
-        id: 46,
-        name: "جالون جبنة فيتا/اسطنبولي/ملح خفيف 7 كجم",
-        price: 220,
-        offerPrice: 210,
-        isOffered: true,
-        imageUrl: gaStanboly7k,
-        slug: "gaStanboly7k"
-    },
-    {
-        id: 47,
-        name: "جالون جبنة فيتا/اسطنبولي/ملح خفيف 4 كجم",
-        price: 160,
-        offerPrice: 150,
-        isOffered: true,
-        imageUrl: Stanboly4k,
-        slug: "Stanboly4k"
-    },
-    ]
-  },
-  juice:{
+    juice:{
     id: 5,
     title: 'عصائر طبيعية',
     routeName: 'juice',
     items: [
-      {
+    {
         id: 48,
         name: "عصير مانجو 850 مل",
         price: 24,
@@ -766,59 +773,130 @@ const SHOP_DATA ={
             slug: "frawla200"
         }
     ]
-},
-butter:{
-    id:7,
-    title: 'مسليات',
-    routeName: 'butter',
-    items:[
-        {
-            id: 73,
-            name: "زبدة بلدي منزوعة الملح 1 كجم",
-            price: 100,
-            offerPrice: 95,
-            isOffered: false,
-            imageUrl: butter1k,
-            slug: "butter1k"
-        },
-        {
-            id: 74,
-            name: "زبدة بلدي منزوعة الملح 400 جم",
-            price: 50,
-            offerPrice: 50,
-            isOffered: false,
-            imageUrl: butter400g,
-            slug: "butter400g"
-        },
-        {
-            id: 75,
-            name: "زبدة بلدي منزوعة الملح 250 جم",
-            price: 30,
-            offerPrice: 26,
-            isOffered: false,
-            imageUrl: butter250g,
-            slug: "butter250g"
-        },
-        {
-            id: 76,
-            name: "سمنة بلدي فلاحي 750 جم",
-            price: 120,
-            offerPrice: 120,
-            isOffered: false,
-            imageUrl: samna750,
-            slug: "samna750"
-    
-        },
-        {
-            id: 77,
-            name: "مورتة 180 جم",
-            price: 22,
-            offerPrice: 20,
-            isOffered: false,
-            imageUrl: morta,
-            slug: "morta"
-        }
-    ]
-}
+    },
+    butter:{
+        id:7,
+        title: 'مسليات',
+        routeName: 'butter',
+        items:[
+            {
+                id: 73,
+                name: "زبدة بلدي منزوعة الملح 1 كجم",
+                price: 100,
+                offerPrice: 95,
+                isOffered: false,
+                imageUrl: butter1k,
+                slug: "butter1k"
+            },
+            {
+                id: 74,
+                name: "زبدة بلدي منزوعة الملح 400 جم",
+                price: 50,
+                offerPrice: 50,
+                isOffered: false,
+                imageUrl: butter400g,
+                slug: "butter400g"
+            },
+            {
+                id: 75,
+                name: "زبدة بلدي منزوعة الملح 250 جم",
+                price: 30,
+                offerPrice: 26,
+                isOffered: false,
+                imageUrl: butter250g,
+                slug: "butter250g"
+            },
+            {
+                id: 76,
+                name: "سمنة بلدي فلاحي 750 جم",
+                price: 130,
+                offerPrice: 120,
+                isOffered: false,
+                imageUrl: samna750,
+                slug: "samna750"
+        
+            },
+            {
+                id: 77,
+                name: "مورتة 180 جم",
+                price: 22,
+                offerPrice: 20,
+                isOffered: false,
+                imageUrl: morta,
+                slug: "morta"
+            }
+        ]
+    },
+    honey:{
+        id:8,
+        title: 'عسل نحل',
+        routeName: 'honey',
+        items:[
+            {
+                id: 78,
+                name: "عسل نحل نوارة البرسيم 950 جم",
+                price: 70,
+                offerPrice: 65,
+                isOffered: false,
+                imageUrl: honey950,
+                slug: "honey950"
+            },
+            {
+                id: 79,
+                name: "عسل نحل نوارة البرسيم 450 جم",
+                price: 37,
+                offerPrice: 35,
+                isOffered: false,
+                imageUrl: honey450,
+                slug: "honey450"
+            },
+            {
+                id: 80,
+                name: "عسل نحل زهور الموالح 450 جم",
+                price: 39,
+                offerPrice: 35,
+                isOffered: false,
+                imageUrl: honey_mwaleh450,
+                slug: "honey_mwaleh450"
+            },
+            {
+                id: 81,
+                name: "عسل نحل زهور حبة البركة 450جم",
+                price: 42,
+                offerPrice: 40,
+                isOffered: false,
+                imageUrl: honyHabetBaraka,
+                slug: "honyHabetBaraka"
+        
+            },
+            {
+                id: 82,
+                name: "عسل نحل نوارة البرسيم سكويز 450جم",
+                price: 37,
+                offerPrice: 35,
+                isOffered: false,
+                imageUrl: honeySkwez450,
+                slug: "honeySkwez450"
+            },
+            {
+                id: 83,
+                name: "عسل نحل بالمكسرات 450جم",
+                price: 60,
+                offerPrice: 55,
+                isOffered: false,
+                imageUrl: honeyNuts,
+                slug: "honeyNuts"
+            },
+            {
+                id: 84,
+                name: "عسل نحل بأعشاب الجينسنج 400جم",
+                price: 68,
+                offerPrice: 65,
+                isOffered: false,
+                imageUrl: honeyGensing450,
+                slug: "honeyGensing450"
+            }
+        ]
+    }
 };
 export default SHOP_DATA;

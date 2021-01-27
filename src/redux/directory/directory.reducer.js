@@ -5,6 +5,7 @@ import sheader550  from '../../components/img/chees/sheder-550.jpg';
 import samna750  from '../../components/img/butter/samna.jpg';
 import mango850  from '../../components/img/juice/mango850.jpg'
 import vanilia200  from '../../components/img/iceCream/icecreamVanilia200.jpg'
+import honey950 from '../../components/img/honey/honey_950gm.jpg'
 
 const INITIAL_STATE = {
     sections: [{
@@ -43,10 +44,10 @@ const INITIAL_STATE = {
         id: 7,
         linkUrl:'shop/butter'
     },{
-        title:'Yogurt',
-        imageUrl: yogurt75,
+        title:'عسل نحل',
+        imageUrl: honey950,
         id: 8,
-        linkUrl:'shop/yogurt'
+        linkUrl:'shop/honey'
     },{
         title:'Yogurt',
         imageUrl: yogurt75,
