@@ -1,6 +1,6 @@
 import firebase from 'firebase/app';
-import 'firebase/firebase-firestore';
-import 'firebase/firebase-auth';
+import 'firebase/firestore';
+import 'firebase/auth';
 
 const config ={
     apiKey: "AIzaSyCuATLgYpzR-QfnKkL-pgV0_IJ-s3KjbgI",
@@ -11,7 +11,7 @@ const config ={
     messagingSenderId: "514263680119",
     appId: "1:514263680119:web:8f5a04f4cd0c861d6c7272",
     measurementId: "G-CHB0Q078HE"
-  }
+  };
 
 firebase.initializeApp(config);
 
@@ -50,10 +50,9 @@ export const addCollectionAndDocuments = async (collectionKey, objectsToAdd) => 
     return await batch.commit();
 }
 
-export const convertCollectionsSnapshotToMap = (collections) => {
+export const convertCollectionsSnapshotToMap = collections => {
     const transformedCollection = collections.docs.map(doc => {
         const {title, items} = doc.data();
-
         return {
             routeName: encodeURI(title.toLowerCase()),
             id: doc.id,
@@ -61,7 +60,6 @@ export const convertCollectionsSnapshotToMap = (collections) => {
             items
         }
     });
-    console.log(transformedCollection)
     
     return transformedCollection.reduce((accumulator, collection) => {
         accumulator[collection.title.toLowerCase()] = collection;

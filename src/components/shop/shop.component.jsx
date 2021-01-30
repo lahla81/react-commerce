@@ -23,11 +23,12 @@ class ShopPage extends React.Component{
         const { updateCollections } = this.props;
         const collectionRef = firestore.collection('collections');
             
-        collectionRef.get().then(snapshot => {
-        const collectionsMap = convertCollectionsSnapshotToMap(snapshot);
+        collectionRef.onSnapshot(async snapshot => {
+            const collectionsMap = convertCollectionsSnapshotToMap(snapshot)
+            console.log(collectionsMap)
             updateCollections(collectionsMap)
-            this.setState({ loading: false })
         })
+           
     }
     render(){
         const { match } = this.props;
@@ -35,23 +36,23 @@ class ShopPage extends React.Component{
         return(
             <div className='shop-page container'>
                 <Route exact path={`${match.path}`} 
-                    render = {props => 
+                    render = {props => (
                         <CollectionsOverviewWithSpinner 
                             isLoading = {loading} {...props} 
                         />
-                    } 
+                    )} 
                 />
                 <Route path={`${match.path}/:collectionId`} 
-                    render = {props => 
+                    render = {props => (
                         <CollectionPageWithSpinner 
                             isLoading = {loading} {...props} 
                         />
-                    } 
+                    )} 
                 />
             </div>
         );
     }
-} 
+}
 
 const mapDispatchToProps = dispatch => ({
     updateCollections: collectionsMap =>
