@@ -27,8 +27,7 @@ class ShopPage extends React.Component{
             const collectionsMap = convertCollectionsSnapshotToMap(snapshot)
             console.log(collectionsMap)
             updateCollections(collectionsMap)
-        })
-           
+        })           
     }
     render(){
         const { match } = this.props;
