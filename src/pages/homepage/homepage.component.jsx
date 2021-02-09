@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import {HomePageContainer} from './homepage.styles';
 import Directory from '../../components/directory/directory.component'
-import logo from '../../components/img/logo.png';
+import logo from '../../assets/img/logo.png';
 
 const HomePage = () => (
   <HomePageContainer>

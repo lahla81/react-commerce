@@ -1,11 +1,11 @@
-import fullMilk  from '../../components/img/milk/full-cream-milk.jpg';
-import rayeb850  from '../../components/img/rayeb/rayeb-850.jpg';
-import yogurt75  from '../../components/img/yogurt/yogurt-75.jpg';
-import sheader550  from '../../components/img/chees/sheder-550.jpg';
-import samna750  from '../../components/img/butter/samna.jpg';
-import mango850  from '../../components/img/juice/mango850.jpg'
-import vanilia200  from '../../components/img/iceCream/icecreamVanilia200.jpg'
-import honey950 from '../../components/img/honey/honey_950gm.jpg'
+import fullMilk  from '../../assets/img/milk.jpg';
+import rayeb850  from '../../assets/img/rayeb-850.jpg';
+import yogurt75  from '../../assets/img/yogurt-75.jpg';
+import sheader550  from '../../assets/img/sheder-550.jpg';
+import samna750  from '../../assets/img/samna.jpg';
+import mango850  from '../../assets/img/apple850.jpg'
+import vanilia200  from '../../assets/img/icecreamChoc200.jpg'
+import honey950 from '../../assets/img/honey_950gm.jpg'
 
 const INITIAL_STATE = {
     sections: [{
@@ -37,7 +37,7 @@ const INITIAL_STATE = {
         title:'أيس كريم',
         imageUrl: vanilia200,
         id: 6,
-        linkUrl:'shop/iceCream'
+        linkUrl:'shop/icecream'
     },{
         title:'سمن',
         imageUrl: samna750,

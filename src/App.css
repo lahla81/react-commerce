@@ -88,3 +88,6 @@ body {
 .icon-twitter:before {
   content: "\ea96";
 }
+.cursor-pointer{
+  cursor: pointer;
+}
